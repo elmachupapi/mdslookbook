@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0%;
+}
+
+/* .container-logo{
+    background-color: aqua;
+}
+
+.container-text{
+    background-color: yellowgreen;
+} */
+
+
+.container-main{
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.802)), url('../img/picture1.png');
+    background-repeat: no-repeat;
+    background-size: 93%;
+    background-attachment: fixed;
+    background-position: 394px;
+   
+}
+
+
+
+.ds-logo{
+    width: 80%;
+}
+
+.henkel-logo{
+    width: 90px;
+    
+}
+
+h2, h1{
+    color: rgb(255, 0, 0);
+}
+
