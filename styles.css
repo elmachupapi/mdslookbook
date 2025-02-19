@@ -1,91 +1,113 @@
 /* General body styles */
 body {
-    margin: 0;
-    padding: 0;
-    background: white;
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-  }
-  
-  .app-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-  }
-  
-  .circle-menu {
-    position: relative;
-    width: 500px;
-    height: 500px;
-  }
-  
-  .center-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 20px;
-    color: black;
-    text-align: center;
-  }
-  
-  .center-label {
-    font-size: 18px;
-    color: black;
-  }
-  
-  
-  .circle-item {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transform-origin: center;
-  }
-  
-  .circle {
-    width: 75px;
-    height: 75px;
-    border-radius: 50%;
-    background: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border: 1px solid #e0e0e0;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .circle i {
-    font-size: 24px;
-    color: red;
-  }
-  
-  .label {
-    font-size: 12px;
-    text-align: center;
-    color: black;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%) rotate(0deg);
-    white-space: nowrap; /* Ensures labels stay in one line */
-  }
-  
-  /* Right alignment for the labels */
-  .right {
-    left: 85px;
-    transform: translateY(-50%); /* Keep it centered vertically */
-  }
-  
-  /* Positioning for left side labels */
-  .left {
-    right: 90px;
-    transform: translateY(-50%); /* Keep it centered vertically */
-  }
-  
+  margin: 0;
+  padding: 0;
+  background: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.circle-menu {
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+
+.center-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: black;
+  text-align: center;
+}
+
+.center-label {
+  font-size: 18px;
+  color: black;
+}
+
+
+.circle-item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform-origin: center;
+}
+
+.circle {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid #e0e0e0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle i {
+  font-size: 24px;
+  color: red;
+}
+
+.label {
+  font-size: 12px;
+  text-align: center;
+  color: black;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(0deg);
+  white-space: nowrap; /* Ensures labels stay in one line */
+}
+
+/* Right alignment for the labels */
+.right {
+  left: 85px;
+  transform: translateY(-50%); /* Keep it centered vertically */
+}
+
+/* Positioning for left side labels */
+.left {
+  right: 90px;
+  transform: translateY(-50%); /* Keep it centered vertically */
+}
+
+.red-circle {
+  width: 60px; /* Size of the inner red circle */
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid red; /* Red outline */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center it inside the white circle */
+}
+
+.star {
+  width: 45px; /* Adjust size of image inside the circle */
+  height: 45px; /* Adjust size of image inside the circle */
+  object-fit: contain; /* Ensure the image maintains its aspect ratio */
+}
+
+.artworks {
+  width: 35px; /* Adjust size of image inside the circle */
+  height: 35px; /* Adjust size of image inside the circle */
+  object-fit: contain; /* Ensure the image maintains its aspect ratio */
+}
