@@ -28,9 +28,13 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 20px;
+  font-size: 15px;
   color: black;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the text horizontally */
+  justify-content: center; /* Center the text vertically */
 }
 
 .center-label {
@@ -111,3 +115,71 @@ body {
   height: 35px; /* Adjust size of image inside the circle */
   object-fit: contain; /* Ensure the image maintains its aspect ratio */
 }
+
+.pre-press {
+  width: 35px; /* Adjust size of image inside the circle */
+  height: 35px; /* Adjust size of image inside the circle */
+  object-fit: contain; /* Ensure the image maintains its aspect ratio */
+}
+
+.arrow {
+  position: absolute;
+}
+
+.arrow .curve {
+  border: 2px solid #BE5F4B;
+  border-color: transparent transparent transparent #9eaab3;
+  height: 300px;  /* Decreased height for a more compact curve */
+  width: 200px;   /* Decreased width for a more compact curve */
+  border-radius: 200px 0 0 200px;  /* Adjusted border-radius for a more circular appearance */
+}
+
+.arrow .point {
+  position: absolute;
+  left: 50px;  /* Adjusted to align with the new curve */
+  top: 150px;  /* Adjusted to align with the new curve */
+}
+
+.arrow .point:before, .arrow .point:after {
+  border: 1px solid #BE5F4B;
+  height: 25px;
+  content: "";
+  position: absolute;
+}
+
+.arrow .point:before {
+  top: -11px;
+  left: -11px;
+  transform: rotate(-74deg);
+}
+
+.arrow .point:after {
+  top: -20px;
+  left: 5px;
+  transform: rotate(12deg);
+}
+
+/* Left Arrow (mirrored) */
+.left-arrow {
+  left: -100px;  /* Adjust the position of the left arrow */
+  top: -110px;    /* Adjust the position for a better alignment */
+}
+
+/* Right Arrow */
+.right-arrow {
+  transform: rotate(180deg);  /* Right arrow remains as is */
+  right: -90px;  /* Adjust the position of the right arrow */
+  top: -120px;     /* Adjust the position for a better alignment */
+
+}
+
+.circle:hover {
+  transform: scale(1.2); /* Slightly enlarge the circle */
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Optional: add a slight shadow for more visual emphasis */
+.circle:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Make the circle appear to float */
+}
+
