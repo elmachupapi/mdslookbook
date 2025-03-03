@@ -3,13 +3,14 @@ body {
   margin: 0;
   padding: 0;
   background: white;
-  font-family: 'Segoe UI', sans-serif; /* Apply Segoe UI Light font */
+  font-family: 'Segoe UI', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
 }
 
+/* Contains the circles, center text, circle menu */
 .app-container {
   display: flex;
   justify-content: center;
@@ -17,12 +18,14 @@ body {
   min-height: 100vh;
 }
 
+/* Contains the center text, inside circle, and outside text */
 .circle-menu {
   position: relative;
   width: 500px;
   height: 500px;
 }
 
+/* Contains the inhouse agency text */
 .center-text {
   position: absolute;
   top: 50%;
@@ -31,18 +34,9 @@ body {
   font-size: 15px;
   color: black;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Center the text horizontally */
-  justify-content: center; /* Center the text vertically */
 }
 
-.center-label {
-  font-size: 18px;
-  color: black;
-}
-
-
+/* parent container of circle, controls positioning around the main circle */
 .circle-item {
   position: absolute;
   top: 50%;
@@ -53,6 +47,7 @@ body {
   transform-origin: center;
 }
 
+/* child, holds the content inside the circle */
 .circle {
   width: 75px;
   height: 75px;
@@ -66,11 +61,7 @@ body {
   align-items: center;
 }
 
-.circle i {
-  font-size: 24px;
-  color: red;
-}
-
+/* Styles for labels associated with circles */
 .label {
   font-size: 12px;
   text-align: center;
@@ -84,98 +75,95 @@ body {
 /* Right alignment for the labels */
 .right {
   left: 85px;
-  transform: translateY(-50%); /* Keep it centered vertically */
+  transform: translateY(-50%); 
 }
 
 /* Positioning for left side labels */
 .left {
   right: 90px;
-  transform: translateY(-50%); /* Keep it centered vertically */
+  transform: translateY(-50%); 
 }
 
 .red-circle {
-  width: 60px; /* Size of the inner red circle */
+  width: 60px; 
   height: 60px;
   border-radius: 50%;
-  border: 2px solid red; /* Red outline */
+  border: 2px solid red; 
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* Center it inside the white circle */
+  transform: translate(-50%, -50%); 
 }
 
+/* css styles for the icons */
 .star {
-  width: 45px; /* Adjust size of image inside the circle */
-  height: 45px; /* Adjust size of image inside the circle */
-  object-fit: contain; /* Ensure the image maintains its aspect ratio */
+width: 45px; 
+height: 45px; 
+object-fit: contain; 
 }
 
 .artworks {
-  width: 35px; /* Adjust size of image inside the circle */
-  height: 35px; /* Adjust size of image inside the circle */
-  object-fit: contain; /* Ensure the image maintains its aspect ratio */
+width: 35px; 
+height: 35px; 
+object-fit: contain; 
 }
 
 .pre-press {
-  width: 35px; /* Adjust size of image inside the circle */
-  height: 35px; /* Adjust size of image inside the circle */
-  object-fit: contain; /* Ensure the image maintains its aspect ratio */
+width: 35px; 
+height: 35px; 
+object-fit: contain; 
 }
 
 #insideCircle{
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  position: relative;
-  border: 3px solid #a7c2ce;
-  box-shadow: none; /* Remove any shadow */
-
+width: 250px;
+height: 250px;
+border-radius: 50%;
+position: relative;
+border: 3px solid #a7c2ce;
+box-shadow: none; 
 }
 
 .circle:hover {
-  transform: scale(1.2); /* Slightly enlarge the circle */
-  transition: transform 0.3s ease-in-out; /* Smooth transition */
+transform: scale(1.2); /* Slightly enlarge the circle */
+transition: transform 0.3s ease-in-out; /* Smooth transition */
+box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Make the circle appear to float */
 }
 
-/* Optional: add a slight shadow for more visual emphasis */
-.circle:hover {
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Make the circle appear to float */
-}
-
+/* lines are for the arrows in the blue circle */
 .line {
-  position: absolute;
-  width: 20px;
-  height: 3px;
-  background-color: #333;
+position: absolute;
+width: 20px;
+height: 3px;
+background-color: #333;
 }
 
 .line1 {
-  top: 4px;  /* Adjust this value to change the position */
+  top: 4px; 
   left: 45%;
-  transform: rotate(135deg); /* Rotates the line */
+  transform: rotate(135deg); 
   background-color: #a3cadb;
 }
 
 .line2 {
-  top: -8px;  /* Adjust this value to change the position */
+  top: -8px;  
   left: 110px;
-  transform: rotate(30deg); /* Rotates the line */
+  transform: rotate(30deg); 
   background-color: #a3cadb;
 
 }
 
 .line3 {
-  bottom: 2px;  /* Adjust this value to change the position */
+  bottom: 2px; 
   left: 49%;
-  transform: rotate(-30deg); /* Rotates the line */
+  transform: rotate(-30deg); 
   background-color: #a3cadb;
 
 }
 
 .line4 {
-  bottom: -9px;  /* Adjust this value to change the position */
+  bottom: -9px;  
   left: 121px;
-  transform: rotate(-135deg); /* Rotates the line */
+  transform: rotate(-135deg); 
   background-color: #a3cadb;
 
 }
@@ -186,26 +174,24 @@ body {
   transition: none; /* Disable transition for hover */
 }
 
-/* If you want to keep the inside circle interactive, use this instead */
-#insideCircle:hover {
-  box-shadow: none; /* Prevent glow effect */
+/* artwork studio text */
+.outside-text {
+position: absolute; 
+top: 13%; 
+left: 88%; 
+transform: translate(-50%, -130%); 
+font-size: 11px; 
+color: black; 
+text-align: center; 
 }
 
-.outside-text {
-  position: absolute; /* Position it absolutely */
-  top: 13%; /* Center vertically */
-  left: 88%; /* Center horizontally */
-  transform: translate(-50%, -130%); /* Adjust to move it outside the circle */
-  font-size: 11px; /* Adjust font size as needed */
-  color: black; /* Change text color if needed */
-  text-align: center; /* Center the text */
-}
+/* e-com text */
 .outside-text-1 {
-  position: absolute; /* Position it absolutely */
-  top: 87%; /* Center vertically */
-  left: 0%; /* Center horizontally */
-  transform: translate(-50%, -130%); /* Adjust to move it outside the circle */
-  font-size: 11px; /* Adjust font size as needed */
-  color: black; /* Change text color if needed */
-  text-align: center; /* Center the text */
+position: absolute; 
+top: 87%; 
+left: 0%; 
+transform: translate(-50%, -130%);
+font-size: 11px; 
+color: black; 
+text-align: center; 
 }
