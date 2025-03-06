@@ -10,14 +10,14 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
-    <title>Digital Support</title>
+    <title>SEO</title>
 </head>
 <body>
- <div class="container-fluid container-main d-flex pt-5">
+ <div class="container-fluid     container-main d-flex pt-5">
     <div class="container container-logo text-center">
-        <h1 class="animate__animated animate__fadeIn">Digital Support</h1>
+        <h1 class="animate__animated animate__fadeIn">SEO</h1>
         <div class="container container-image p-3">
-            <img class="ds-logo animate__animated animate__fadeInDownBig" src="../img/Picture1.png" alt="Digital support">
+            <img class="ds-logo animate__animated animate__fadeInDownBig" src="" alt="Digital support">
         </div>
     </div>  
       <div class="container container-text">
@@ -43,29 +43,28 @@
     <footer class="d-flex flex-wrap justify-content-between align-items-center  border-top ">
       <img class="henkel-logo ms-auto" src="../img/henkel-logo.png" alt="henkel-logo">
     </footer>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-          // Get the title of the page and convert it to lowercase with hyphens
-          let pageTitle = document.title.toLowerCase().replace(/\s+/g, "-");
-
-          // Select the container for background image
-          let container = document.querySelector(".container-main");
-
-          // Select the image element
-          let imageElement = document.querySelector(".ds-logo");
-
-          // Set the background image dynamically
-          container.style.backgroundImage = `linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.802)), url('../img/${pageTitle}.png')`;
-
-          // Set the image src dynamically
-          if (imageElement) {
-              imageElement.src = `../img/${pageTitle}.png`;
-          }
-      });
-  </script>
   </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Get the title of the page and convert it to lowercase with hyphens
+        let pageTitle = document.title.toLowerCase().replace(/\s+/g, "-");
+
+        // Select the container for background image
+        let container = document.querySelector(".container-main");
+
+        // Select the image element
+        let imageElement = document.querySelector(".ds-logo");
+
+        // Set the background image dynamically
+        container.style.backgroundImage = `linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.802)), url('../img/${pageTitle}.png')`;
+
+        // Set the image src dynamically
+        if (imageElement) {
+            imageElement.src = `../img/${pageTitle}.png`;
+        }
+    });
+</script>
 </body>
 </html>
-
 
